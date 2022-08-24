@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapping">
+    <header class="header">
+        <div class="container header-container">
+        <div class="header-logo">
+            <img src="./images/logo.jpg" class="logo" alt="logo">
+        </div>
+        <ul class="header__ul">
+            <li class="header_li"><a href="#form" class="header__a">Форма</a></li>
+            <li class="header_li"><a href="#video" class="header__a"> Відео</a></li>
+            <li class="header_li"><a href="#text" class="header__a"> Текст</a></li>
+            <li class="header_li"><a href="#tabs" class="header__a"> Таби</a></li>
+            <li class="header_li"><a href="#tabs" class="header__a"> Карусель</a></li>
+
+        </ul>
+    </div>
+    </header>
+
+    <main class="main main-container">
+        <section id="form">
+            <form class="decor">
+                <div class="form-left-decoration"></div>
+                <div class="form-right-decoration"></div>
+                <div class="circle"></div>
+                <div class="form-inner">
+                <h1>Форма</h1>
+                <input type="text" placeholder="Ім'я" required>
+                <input type="text" placeholder="Фамілія" required>
+                <input type="tel" placeholder="Номер телефону" minlength="10" maxlength="13" required>
+                <input type="email" placeholder="Email" required>
+                <input type="submit" value="Отправить">
+                </div>
+                </form>
+        </section>
+
+        <section id="video">
+            <div class="video">
+            <video width="600px" 
+            src="https://www.w3schools.com/html/mov_bbb.mp4" controls>
+            </video>
+        </div>
+        </section>
+
+        <section id="text">
+            <div class="wrapper">   
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquid, possimus molestiae debitis architecto fugit
+                necessitatibus laboriosam nostrum itaque recusandae?
+                Autem et eum iusto architecto atque rerum reprehenderit
+                quod provident at?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquid, possimus molestiae debitis architecto fugit
+                necessitatibus laboriosam nostrum itaque recusandae?
+                Autem et eum iusto architecto atque rerum reprehenderit
+                 quod provident at?
+            </p>
+        </div>
+        </section>
+
+        <section id="tabs">
+            <div class="tabs">
+                <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+                <label for="tab-btn-1">Таби</label>
+                <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+                <label for="tab-btn-2">Карусель</label>  
+                <div id="content-1">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aliquid, possimus molestiae debitis architecto fugit
+                        necessitatibus laboriosam nostrum itaque recusandae?
+                        Autem et eum iusto architecto atque rerum reprehenderit
+                        quod provident at?
+                   </p>
+                   <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aliquid, possimus molestiae debitis architecto fugit
+                        necessitatibus laboriosam nostrum itaque recusandae?
+                        Autem et eum iusto architecto atque rerum reprehenderit
+                        quod provident at?
+                   </p>
+                   <button id="open_pop_up">Модальне вікно</button>
+                </div>
+                <div id="content-2">
+                    <div class="wrap">
+                        <div class="slides">
+                            <img class="slides-item" src="./images/first-slide.jpg" alt="img">
+                            <img class="slides-item" src="./images/second-slide.webp" alt="img">
+                        </div>
+                        <div class="buttons-block">
+                            <div id="left-button">❰</div>
+                            <div id="right-button">❱</div>
+                        </div>
+                        <div class="dots-block">
+                            <div class="dots-item active"></div>
+                            <div class="dots-item"></div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </section>
+
+              <div class="pop_up" id="pop_up">
+                <div class="pop_up_container">
+                    <div class="pop_up_body" id="pop_up_body">
+                        <p>Модальне вікно</p>
+                            <div class="pop_up_close" id="pop_up_close">&#10006</div>
+                    </div>
+                </div>
+            </div>   
+    </main>
+
+<footer>
+    <ul class="social">
+        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-linkedin"><ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+    </ul>
+    <ul class="menu">
+        <li><a href="#form">Форма</a></li>
+        <li><a href="#video">Відео</a></li>
+        <li><a href="#text">Текст</a></li>
+        <li><a href="#tabs">Таби</a></li>
+        <li><a href="#tabs">Карусель</a></li>
+    </ul>
+</footer>
+</div>
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
